@@ -1,0 +1,32 @@
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: $direction;
+    
+}
+
+
+
+
+header{
+
+    @include flexCenter(column);
+    background: lightblue;
+    color: $textcolor;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // height: 100vh;
+
+// the below resembles just like 28
+button {
+    background:$primaryBtn;
+    &:hover{
+        background: yellow;
+    }
+
+}
+
+}

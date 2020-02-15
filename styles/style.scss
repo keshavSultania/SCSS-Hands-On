@@ -1,0 +1,46 @@
+// $primaryBtn : green;
+// $textcolor: black;
+
+@import './variables';
+@import './header';
+
+
+
+// header{
+//     background: lightblue;
+//     display: flex;
+//     color: $textcolo;
+//     justify-content: center;
+
+// // the below resembles just like 28
+// button {
+//     background:$primaryBtn;
+//     &:hover{
+//         background: yellow;
+//     }
+
+// }
+
+// }
+
+// header button {
+//     background: red;
+// }
+
+// .contact button{
+//     background: red;
+// }
+
+
+// the below resembles just like 11
+// header button { 
+//     background:$primaryBtn;
+// }
+
+.contact {
+
+    @extend header; //inheritance
+    @include flexCenter(row); //mixins
+    // background:$primaryBtn;
+    width:120%-20%;
+}
